@@ -1,50 +1,16 @@
-# Badges
+# MyBadges
 
-from https://shields.io
+This repo is for all of my badges, assets, icons, images, YOU NAME IT.
 
-## All Badges
+# MASSIVE WIP
 
-![assembly](https://img.shields.io/badge/Assembly-%23007ACC?style=flat-square&logo=assemblyscript)
-![c](https://img.shields.io/badge/C-%23A8B9CC?style=flat-square&logo=c&logoColor=%23fff)
-![c++](https://img.shields.io/badge/C_%2B%2B-%2300599C?style=flat-square&logo=cplusplus&logoColor=%23fff)
-![CSS](https://img.shields.io/badge/CSS-%23663399?style=flat-square&logo=css&logoColor=%23fff)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-%23F38020?style=flat-square&logo=cloudflare&logoColor=%23fff)
-![git](https://img.shields.io/badge/Git-%23F05032?style=flat-square&logo=git&logoColor=%23fff)
-![github](https://img.shields.io/badge/GitHub-%23181717?style=flat-square&logo=github&logoColor=%23fff)
-![qemu](https://img.shields.io/badge/QEMU-%23FF6600?style=flat-square&logo=qemu&logoColor=%23000)
-![MDB](https://img.shields.io/badge/MongoDB-%2347A248?style=flat-square&logo=mongodb&logoColor=%23fff)
-![bootstrap](https://img.shields.io/badge/Bootstrap-%237952B3?style=flat-square&logo=bootstrap&logoColor=%23fff)
-![Stripe](https://img.shields.io/badge/Stripe-%23635BFF?style=flat-square&logo=stripe&logoColor=%23fff)
-![DJS](https://img.shields.io/badge/DiscordJS-%235865F2?style=flat-square&logo=discorddotjs&logoColor=%23fff)
-![vite](https://img.shields.io/badge/Vite-%23646CFF?style=flat-square&logo=vite&logoColor=%23fff)
-![PSQL](https://img.shields.io/badge/PostgreSQL-%234169E1?style=flat-square&logo=postgresql&logoColor=%23fff)
-![PMA](https://img.shields.io/badge/PHPMyAdmin-%236C78AF?style=flat-square&logo=phpmyadmin&logoColor=%23fff)
-![TS](https://img.shields.io/badge/TypeScript-%233178C6?style=flat-square&logo=typescript&logoColor=%23fff)
-![PYTHON](https://img.shields.io/badge/Python-%233776AB?style=flat-square&logo=python&logoColor=%23fff)
-![SQLite](https://img.shields.io/badge/SQLite-%23003B57?style=flat-square&logo=sqlite&logoColor=%23fff)
-![TCSS](https://img.shields.io/badge/TailwindCSS-%2306B6D4?style=flat-square&logo=tailwindcss&logoColor=%23fff)
-![JS](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=flat-square&logo=javascript&logoColor=%23000)
-![linux](https://img.shields.io/badge/Linux-%23FCC624?style=flat-square&logo=linux&logoColor=%23000)
-![cPanel](https://img.shields.io/badge/cPanel-%23FF6C2C?style=flat-square&logo=cpanel&logoColor=%23fff)
-![HTML](https://img.shields.io/badge/HTML-%23E34F26?style=flat-square&logo=html5&logoColor=%23fff)
-![LARAVEL](https://img.shields.io/badge/Laravel-%23FF2D20?style=flat-square&logo=laravel&logoColor=%23000)
-![renpy](https://img.shields.io/badge/Ren'Py-%23FF7F7F?style=flat-square&logo=renpy&logoColor=%23000)
-![svelte](https://img.shields.io/badge/Svelte-%23FF3E00?style=flat-square&logo=svelte&logoColor=%23000)
-![GQL](https://img.shields.io/badge/GraphQL-%23E10098?style=flat-square&logo=graphql&logoColor=%23fff)
-![latex](https://img.shields.io/badge/LaTeX-%23008080?style=flat-square&logo=latex&logoColor=%23fff)
-![JWT](https://img.shields.io/badge/JWT-%23000000?style=flat-square&logo=jsonwebtokens&logoColor=%23fff)
-![JSON](https://img.shields.io/badge/JSON-%23000000?style=flat-square&logo=json&logoColor=%23fff)
-![MD](https://img.shields.io/badge/MarkDown-%23000000?style=flat-square&logo=markdown&logoColor=%23fff)
-![symfony](https://img.shields.io/badge/Symfony-%23000000?style=flat-square&logo=symfony&logoColor=%23fff)
-![CakePHP](https://img.shields.io/badge/CakePHP-%23D33C43?style=flat-square&logo=cakephp&logoColor=%23fff)
-![yaml](https://img.shields.io/badge/YAML-%23CB171E?style=flat-square&logo=yaml&logoColor=%23fff)
-![apache](https://img.shields.io/badge/Apache-%23D22128?style=flat-square&logo=apache&logoColor=%23fff)
-![sass](https://img.shields.io/badge/Sass-%23CC6699?style=flat-square&logo=sass&logoColor=%23fff)
-![sponsors](https://img.shields.io/badge/GitHub_Sponsors-%23EA4AAA?style=flat-square&logo=githubsponsors&logoColor=%23fff)
-![DOTNET](https://img.shields.io/badge/DotNET-%23512BD4?style=flat-square&logo=dotnet&logoColor=%23fff)
-![discord](https://img.shields.io/badge/Discord-%235865F2?style=flat-square&logo=discord&logoColor=%23fff)
-![indeed](https://img.shields.io/badge/Indeed-%23003A9B?style=flat-square&logo=indeed&logoColor=%23fff)
-![bsky](https://img.shields.io/badge/Bluesky-%231185FE?style=flat-square&logo=bluesky&logoColor=%23fff)
-![opengl](https://img.shields.io/badge/OpenGL-%235586A4?style=flat-square&logo=opengl&logoColor=%23fff)
-![bash](https://img.shields.io/badge/Bash-%234EAA25?style=flat-square&logo=gnubash&logoColor=%23000)
-![ndjs](https://img.shields.io/badge/Node.JS-%235FA04E?style=flat-square&logo=nodedotjs&logoColor=%23fff)
+## Structure/Directory/Menu
+
+1. `README.md` (this file)
+2. `/assets` the main folder.
+3. `/assets/BADGES.md` the file with all badges.
+4. `/assets/ICONS.md` the file with all icons.
+5. `/assets/temp` the folder with all file templates.
+6. `/assets/icons` the actual icon files.
+7. `assets/img` the actual image files.
+8. `assets/LINKS.md` the file with all resource links.
