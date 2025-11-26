@@ -1,0 +1,38 @@
+# .gitignore template
+
+# Folders.
+
+/node_modules
+/private
+/log
+/logs
+/output
+/build
+/builds
+/release
+/cache
+
+# Files.
+
+*.log
+.env
+.env.local
+
+
+# ARCHIVES.
+
+*.zip
+*.rar
+*.tar.gz
+*.tar.xz
+*.tar
+
+# BINARIES.
+
+*.deb
+*.exe
+*.dmg
+*.pkg
+*.app
+*.bin
+*.iso
