@@ -35,6 +35,10 @@
 ![opengl](https://img.shields.io/badge/OpenGL-%235586A4?style=flat-square&logo=opengl&logoColor=%23fff)
 ![bash](https://img.shields.io/badge/Bash-%234EAA25?style=flat-square&logo=gnubash&logoColor=%23000)
 ![ndjs](https://img.shields.io/badge/Node.JS-%235FA04E?style=flat-square&logo=nodedotjs&logoColor=%23fff)
+![hugo](https://img.shields.io/badge/Hugo.io-hugo?style=flat-square&logo=hugo&logoColor=%23fff&logoSize=auto&labelColor=%23FF4088&color=%23FF4088)
+![MySQL](https://img.shields.io/badge/MySQL-mysql?style=flat-square&logo=mysql&logoColor=%23fff&logoSize=auto&labelColor=%234479A1&color=%234479A1)
+
+
 
 
 ## SOCIAL MEDIA
@@ -52,6 +56,8 @@
 ![gmail](https://img.shields.io/badge/Gmail-%23EA4335?style=flat-square&logo=gmail&logoColor=%23fff&logoSize=auto)
 ![GR](https://img.shields.io/badge/GoodReads-%231E1914?style=flat-square&logo=goodreads&logoColor=%23fff&logoSize=auto)
 ![ig](https://img.shields.io/badge/Instagram-%23FF0069?style=flat-square&logo=instagram&logoColor=%23fff&logoSize=auto)
+![reddit](https://img.shields.io/badge/Reddit-reddit?style=flat-square&logo=reddit&logoColor=%23fff&logoSize=auto&labelColor=%23FF4500&color=%23FF4500)
+
 
 
 
