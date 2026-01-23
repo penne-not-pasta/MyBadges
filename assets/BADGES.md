@@ -37,6 +37,7 @@
 ![ndjs](https://img.shields.io/badge/Node.JS-%235FA04E?style=flat-square&logo=nodedotjs&logoColor=%23fff)
 ![hugo](https://img.shields.io/badge/Hugo.io-hugo?style=flat-square&logo=hugo&logoColor=%23fff&logoSize=auto&labelColor=%23FF4088&color=%23FF4088)
 ![MySQL](https://img.shields.io/badge/MySQL-mysql?style=flat-square&logo=mysql&logoColor=%23fff&logoSize=auto&labelColor=%234479A1&color=%234479A1)
+![php](https://img.shields.io/badge/php-php?style=flat-square&logo=php&logoColor=%23fff&logoSize=auto&labelColor=%23777BB4&color=%23777BB4)
 
 
 
