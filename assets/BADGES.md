@@ -38,6 +38,7 @@
 ![hugo](https://img.shields.io/badge/Hugo.io-hugo?style=flat-square&logo=hugo&logoColor=%23fff&logoSize=auto&labelColor=%23FF4088&color=%23FF4088)
 ![MySQL](https://img.shields.io/badge/MySQL-mysql?style=flat-square&logo=mysql&logoColor=%23fff&logoSize=auto&labelColor=%234479A1&color=%234479A1)
 ![php](https://img.shields.io/badge/php-php?style=flat-square&logo=php&logoColor=%23fff&logoSize=auto&labelColor=%23777BB4&color=%23777BB4)
+![ruby](https://img.shields.io/badge/Ruby-%23CC342D?style=flat-square&logo=ruby&logoColor=%23fff&logoSize=auto&labelColor=%23CC342D)
 
 
 
@@ -58,8 +59,8 @@
 ![GR](https://img.shields.io/badge/GoodReads-%231E1914?style=flat-square&logo=goodreads&logoColor=%23fff&logoSize=auto)
 ![ig](https://img.shields.io/badge/Instagram-%23FF0069?style=flat-square&logo=instagram&logoColor=%23fff&logoSize=auto)
 ![reddit](https://img.shields.io/badge/Reddit-reddit?style=flat-square&logo=reddit&logoColor=%23fff&logoSize=auto&labelColor=%23FF4500&color=%23FF4500)
-
-
+![Quora](https://img.shields.io/badge/Quora-%23B92B27?style=flat-square&logo=quora&logoColor=%23fff&logoSize=auto&labelColor=%23B92B27)
+![4Chan](https://img.shields.io/badge/4Chan-%23006600?style=flat-square&logo=4chan&logoColor=%23fff&logoSize=auto&labelColor=%23006600)
 
 
 ## OS
@@ -67,7 +68,7 @@
 ![linux](https://img.shields.io/badge/Linux-%23FCC624?style=flat-square&logo=linux&logoColor=%23000)
 ![alpine](https://img.shields.io/badge/Alpine_Linux-%230D597F?style=flat-square&logo=alpinelinux&logoColor=%23fff&logoSize=auto)
 ![alma](https://img.shields.io/badge/Alma_Linux-%238BC0D0?style=flat-square&logo=almalinux&logoColor=%23000&logoSize=auto)
-![android](https://img.shields.io/badge/Android-%233DDC84?style=flat-square&logo=android&logoColor=%23fff&logoSize=auto)
+![android](https://img.shields.io/badge/Android-%233DDC84?style=flat-square&logo=android&logoColor=%23000&logoSize=auto&labelColor=%233DDC84)
 ![arch](https://img.shields.io/badge/Arch_Linux-%231793D1?style=flat-square&logo=archlinux&logoColor=%23fff&logoSize=auto)
 ![artix](https://img.shields.io/badge/Artix_Linux-%2310A0CC?style=flat-square&logo=artixlinux&logoColor=%23fff&logoSize=auto)
 ![Asahi](https://img.shields.io/badge/Asahi_Linux-%23A61200?style=flat-square&logo=asahilinux&logoColor=%23fff&logoSize=auto)
