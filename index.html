@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBadges Dashboard</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --text: #c9d1d9;
+            --accent: #238636;
+            --tab-bg: #161b22;
+            --border: #30363d;
+            --code-bg: #010409;
+        }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; line-height: 1.6; }
+        
+        .tabs { display: flex; background: var(--tab-bg); border-bottom: 1px solid var(--border); padding: 10px 10px 0; position: sticky; top: 0; z-index: 100; }
+        .tab-btn {
+            padding: 10px 20px; border: none; background: none; color: var(--text);
+            cursor: pointer; border-radius: 6px 6px 0 0; margin-right: 5px; font-size: 14px;
+        }
+        .tab-btn.active { background: var(--bg); border: 1px solid var(--border); border-bottom: 1px solid var(--bg); font-weight: bold; }
+
+        .content-section { display: none; padding: 20px; max-width: 1100px; margin: auto; animation: fadeIn 0.2s; }
+        .content-section.active { display: block; }
+
+        /* Images Tab Grid */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 15px; }
+        .asset-item { 
+            background: var(--tab-bg); border: 1px solid var(--border); padding: 15px; 
+            border-radius: 8px; text-align: center; cursor: pointer; transition: 0.2s;
+        }
+        .asset-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .asset-item img { max-width: 100%; height: auto; }
+
+        /* Templates Tab Styling */
+        .template-card { background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 20px; }
+        .template-header { padding: 10px 15px; background: var(--tab-bg); border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .template-name { font-family: monospace; font-weight: bold; color: #79c0ff; }
+        pre { margin: 0; padding: 15px; overflow-x: auto; font-size: 13px; }
+
+        /* General Buttons */
+        .copy-btn { background: var(--accent); color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+        .copy-btn:hover { opacity: 0.8; }
+
+        #toast {
+            visibility: hidden; min-width: 200px; background-color: var(--accent); color: #fff;
+            text-align: center; border-radius: 5px; padding: 16px; position: fixed;
+            z-index: 1000; left: 50%; bottom: 30px; transform: translateX(-50%);
+        }
+        #toast.show { visibility: visible; animation: fadeInOut 2.5s; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInOut { 0%, 100% { opacity: 0; } 10%, 90% { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<nav class="tabs">
+    <button class="tab-btn active" onclick="openTab('badges')">Badges</button>
+    <button class="tab-btn" onclick="openTab('images')">Images</button>
+    <button class="tab-btn" onclick="openTab('templates')">Templates</button>
+</nav>
+
+<div id="badges" class="content-section active">
+    <div id="badges-viewer">Loading badges...</div>
+</div>
+
+<div id="images" class="content-section">
+    <div class="gallery" id="images-list">Loading assets...</div>
+</div>
+
+<div id="templates" class="content-section">
+    <div id="templates-list">Loading templates...</div>
+</div>
+
+<div id="toast">Copied to clipboard!</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    const user = 'penne-not-pasta';
+    const repo = 'MyBadges';
+
+    async function init() {
+        // 1. Load Badges Tab (Markdown)
+        try {
+            const res = await fetch('https://raw.githubusercontent.com/penne-not-pasta/MyBadges/refs/heads/main/assets/BADGES.md');
+            const md = await res.text();
+            document.getElementById('badges-viewer').innerHTML = marked.parse(md);
+        } catch (e) { console.error("Badges error", e); }
+
+        // 2. Load Images Tab
+        try {
+            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/assets/img`);
+            const files = await res.json();
+            const list = document.getElementById('images-list');
+            list.innerHTML = '';
+            files.forEach(file => {
+                if (file.type === 'file') {
+                    const div = document.createElement('div');
+                    div.className = 'asset-item';
+                    const mdCode = `![${file.name}](${file.download_url})`;
+                    div.onclick = () => copyText(mdCode);
+                    div.innerHTML = `<img src="${file.download_url}"><p style="font-size:10px; margin:5px 0 0;">${file.name}</p>`;
+                    list.appendChild(div);
+                }
+            });
+        } catch (e) { console.error("Images error", e); }
+
+        // 3. Load Templates Tab (Code Blocks)
+        try {
+            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/assets/templates`);
+            const files = await res.json();
+            const list = document.getElementById('templates-list');
+            list.innerHTML = '';
+            for (const file of files) {
+                if (file.type === 'file') {
+                    const contentRes = await fetch(file.download_url);
+                    const code = await contentRes.text();
+                    
+                    const card = document.createElement('div');
+                    card.className = 'template-card';
+                    card.innerHTML = `
+                        <div class="template-header">
+                            <span class="template-name">${file.name}</span>
+                            <button class="copy-btn" onclick="copyText(\`${code.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`)">Copy Code</button>
+                        </div>
+                        <pre><code>${escapeHtml(code)}</code></pre>
+                    `;
+                    list.appendChild(card);
+                }
+            }
+        } catch (e) { console.error("Templates error", e); }
+    }
+
+    function copyText(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            const toast = document.getElementById("toast");
+            toast.className = "show";
+            setTimeout(() => { toast.className = ""; }, 2500);
+        });
+    }
+
+    function openTab(tabId) {
+        document.querySelectorAll('.content-section, .tab-btn').forEach(el => el.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+
+    function escapeHtml(text) {
+        return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    init();
+</script>
+</body>
+</html>
