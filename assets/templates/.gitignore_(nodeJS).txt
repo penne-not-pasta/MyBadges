@@ -1,0 +1,11 @@
+# .gitignore template for NODE.JS
+
+# Folders.
+
+/node_modules
+
+# Files.
+
+*.log
+.env
+.env.local
