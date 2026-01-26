@@ -39,8 +39,11 @@
 ![MySQL](https://img.shields.io/badge/MySQL-mysql?style=flat-square&logo=mysql&logoColor=%23fff&logoSize=auto&labelColor=%234479A1&color=%234479A1)
 ![php](https://img.shields.io/badge/php-php?style=flat-square&logo=php&logoColor=%23fff&logoSize=auto&labelColor=%23777BB4&color=%23777BB4)
 ![ruby](https://img.shields.io/badge/Ruby-%23CC342D?style=flat-square&logo=ruby&logoColor=%23fff&logoSize=auto&labelColor=%23CC342D)
-
-
+![rust](https://img.shields.io/badge/Rust-%23000?style=flat-square&logo=rust&logoColor=%23fff&logoSize=auto&labelColor=%23000)
+![go](https://img.shields.io/badge/GO-%2300ADD8?style=flat-square&logo=go&logoColor=%23fff&logoSize=auto&labelColor=%2300ADD8)
+![JAVA](https://img.shields.io/badge/Java-%23FE5000?style=flat-square&logo=buymeacoffee&logoColor=%23fff&logoSize=auto&labelColor=%23FE5000)
+![TOML](https://img.shields.io/badge/TOML-%239C4121?style=flat-square&logo=toml&logoColor=%23fff&logoSize=auto&labelColor=%239C4121)
+![latex](https://img.shields.io/badge/LaTeX-%23008080?style=flat-square&logo=latex&logoColor=%23fff&logoSize=auto&labelColor=%23008080)
 
 
 ## SOCIAL MEDIA
