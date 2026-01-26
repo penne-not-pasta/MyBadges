@@ -1,0 +1,13 @@
+# .gitignore template for PHP
+
+# Folders.
+
+/node_modules
+/vendor
+/private
+
+# Files.
+
+*.log
+.env
+.env.local
