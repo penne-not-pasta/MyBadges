@@ -61,6 +61,7 @@
 ![reddit](https://img.shields.io/badge/Reddit-reddit?style=flat-square&logo=reddit&logoColor=%23fff&logoSize=auto&labelColor=%23FF4500&color=%23FF4500)
 ![Quora](https://img.shields.io/badge/Quora-%23B92B27?style=flat-square&logo=quora&logoColor=%23fff&logoSize=auto&labelColor=%23B92B27)
 ![4Chan](https://img.shields.io/badge/4Chan-%23006600?style=flat-square&logo=4chan&logoColor=%23fff&logoSize=auto&labelColor=%23006600)
+![AO3](https://img.shields.io/badge/AO3-%23990000?style=flat-square&logo=archiveofourown&logoColor=%23fff&logoSize=auto&labelColor=%23990000)
 
 
 ## OS
@@ -107,3 +108,16 @@
 ## OTHER
 
 ![sponsors](https://img.shields.io/badge/GitHub_Sponsors-%23EA4AAA?style=flat-square&logo=githubsponsors&logoColor=%23fff)
+
+## GAMES
+
+![CHESS](https://img.shields.io/badge/Chess.com-%2381B64C?style=flat-square&logo=chessdotcom&logoColor=%23fff&logoSize=auto&labelColor=%2381B64C)
+
+
+
+## SOFTWARE
+
+![AUDACITY](https://img.shields.io/badge/Audacity-%230000CC?style=flat-square&logo=audacity&logoColor=%23fff&logoSize=auto&labelColor=%230000CC)
+![BETTER DISCORD](https://img.shields.io/badge/BetterDiscord-%233E82E5?style=flat-square&logo=betterdiscord&logoColor=%23fff&logoSize=auto&labelColor=%233E82E5)
+![BITWARDEN](https://img.shields.io/badge/Bitwarden-%23175DDC?style=flat-square&logo=bitwarden&logoColor=%23fff&logoSize=auto&labelColor=%23175DDC)
+![BLENDER](https://img.shields.io/badge/Blender-%23E87D0D?style=flat-square&logo=blender&logoColor=%23000&logoSize=auto&labelColor=%23E87D0D)
